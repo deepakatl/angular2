@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'My First App';
+  message='This is an important Message';
+
+  changeColor(){
+    alert('Div Clicked');
+  }
 }
