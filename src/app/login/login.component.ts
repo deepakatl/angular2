@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
    
     object1 = {name:'Deepak', company:'DNATA'};
 
-    object2:Person = {firstName:"Minnal"};
+    object2:Person = {name:{},address:{}};
 
   constructor() { }
 
@@ -22,7 +22,15 @@ export class LoginComponent implements OnInit {
   }
 
 }
-type Person={
-      firstName:string,
+type HasName={
+      firstName?:string,
       lastName?:string
     }
+type hasAddress={
+  houseNumber?:number,
+  place?:string
+}
+type Person={
+  name:HasName,
+  address:hasAddress
+}
