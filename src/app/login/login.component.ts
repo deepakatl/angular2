@@ -28,7 +28,8 @@ type HasName={
     }
 type hasAddress={
   houseNumber?:number,
-  place?:string
+  place?:string,
+  pin?:number
 }
 type Person={
   name:HasName,
